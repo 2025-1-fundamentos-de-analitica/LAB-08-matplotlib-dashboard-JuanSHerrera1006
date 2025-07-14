@@ -1,0 +1,105 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shipping Dashboard</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f9;
+                margin: 0;
+                padding: 0;
+                color: #333;
+            }
+
+            header {
+                background-color: #007bff;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 24px;
+                color: #333;
+                text-align: center;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 20px auto;
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: space-around;
+            }
+
+            figure {
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                width: 100%;
+                max-width: 500px;
+                margin: 0;
+                padding: 10px;
+                text-align: center;
+            }
+
+            figure img {
+                width: 100%;
+                border-radius: 10px;
+                max-height: 400px;
+                object-fit: cover;
+            }
+
+            figure h2 {
+                margin-top: 10px;
+            }
+
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                figure {
+                    width: 90%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Shipping Dashboard</h1>
+        </header>
+
+        <div class="container">
+            <figure>
+                <h2>Envíos por Warehouse</h2>
+                <img src="shipping_per_warehouse.png" alt="Shipping per Warehouse">
+            </figure>
+            <figure>
+                <h2>Mode of Shipment</h2>
+                <img src="mode_of_shipment.png" alt="Mode of Shipment">
+            </figure>
+            <figure>
+                <h2>Average Customer Rating</h2>
+                <img src="average_customer_rating.png" alt="Average Customer Rating">
+            </figure>
+            <figure>
+                <h2>Weight Distribution</h2>
+                <img src="weight_distribution.png" alt="Weight Distribution">
+            </figure>
+        </div>
+    </body>
+    </html>
